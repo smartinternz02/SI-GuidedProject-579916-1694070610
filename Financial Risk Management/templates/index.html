@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <title>Financial Risk Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/font-awesome-4.7/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/mdi-font/css/material-design-iconic-font.min.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<style>
+.card-2 .card-heading {
+    background: url('fin1.jpg') top left/cover no-repeat !important;
+}
+</style>
+<body bgcolor="#ADD8E6">
+<div class="page-wrapper bg-red p-t-100 font-robo">
+    <div class="wrapper wrapper--w960">
+        <div class="card card-2">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Financial Risk Assessment</h2>
+                <div class="row row-space">
+                    <p> Financial Institutions need to continually weigh the risk of their transactions, and they determine their risk.<br>A financial risk assessment is an evaluation of the probability that a financial asset or investment could lose value.<br><br>Investing in growth and innovation.</p>
+                    <img src="/static/image.jpg" width="900" height="400">
+                    <div class="p-t-30">
+                        <form action="/risk" method="POST">
+                            <div class="row -space">
+                                <div class="col - 2">
+                                    <div class="input-group">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="gender">
+                                                <option disabled="disabled" selected="selected">gender</option>
+                                                <option value="f">female</option>
+                                                <option value="m">male</option>
+                                            </select>
+                                            <select name="job">
+                                                <option disabled="disabled" selected="selected">Choose employment type</option>
+                                                <option value="un">Unskilled / Non-Resident</option>
+                                                <option value="ur">Unskilled / Resident</option>
+                                                <option value="sk">Skilled</option>
+                                                <option value="hs">highly Skilled</option>
+                                            </select>
+                                            <br><br>
+                                            <select name="checking">
+                                                <option disabled="disabled" selected="selected">Checking Account</option>
+                                                <option value="l">little</option>
+                                                <option value="m">moderate</option>
+                                            </select>
+                                            <select name="housing">
+                                                <option disabled="disabled" selected="selected">Housing</option>
+                                                <option value="ow">own</option>
+                                                <option value="fr">free</option>
+                                            </select>
+                                            <br><br>
+                                            <select name="saving">
+                                                <option disabled="disabled" selected="selected">Savings Account</option>
+                                                <option value="li">little</option>
+                                                <option value="mo">moderate</option>
+                                            </select>
+                                            <select name="purpose">
+                                                <option disabled="disabled" selected="selected">Purpose</option>
+                                                <option value="ed">education</option>
+                                                <option value="he">health</option>
+                                                <option value="vehi">vehicle</option>
+                                                <option value="home">home</option>
+                                            </select><br><br>
+                                            Credit Amount<input type="text" name="credit">
+                                            Duration<input type="text"  name="duration"><br><br>
+                                            <input type="submit" value="SUBMIT" name="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='js/global.js') }}" type="text/javascript"></script>
+</body>
+</html>
